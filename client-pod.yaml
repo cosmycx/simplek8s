@@ -12,5 +12,7 @@ spec:
       ports:
         - containerPort: 80
 
-# $(minikube docker-env)
+# pull from local docker images
+# eval $(minikube docker-env)
 # docker build . -t validationweb
+# imagePullPolicy: Never
