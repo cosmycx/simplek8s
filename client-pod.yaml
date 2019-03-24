@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: client-pod
+  labels: 
+    component: web
+spec:
+  containers: 
+    - name: client
+      image: validationweb
+      imagePullPolicy: Never
+      ports:
+        - containerPort: 80
+
+# $(minikube docker-env)
+# docker build . -t validationweb
